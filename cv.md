@@ -16,3 +16,33 @@ web development.
 
 ## *Skills:*
 TypeScript(Angular), PHP(Laravel)
+
+## *Code examples:*
+```
+getAll(): Observable<LinkCategory[]> {
+    if (this.linkCategories) {
+        return new Observable(subscriber => {
+            subscriber.next(this.linkCategories);
+            subscriber.complete();
+        });
+    }
+    if (!this.linkCategoriesSubject) {
+        const subject: Subject<LinkCategory[]> = new Subject();
+        this.linkCategoriesRepository.getAll().subscribe({
+            next: categories => {
+                this.updateLinkCategories(categories);
+                subject.next(categories);
+                subject.complete();
+            },
+                error: e => {
+                subject.error(e);
+            }
+        });
+        this.linkCategoriesSubject = subject;
+    }
+
+    return this.linkCategoriesSubject;
+}
+
+```
+
