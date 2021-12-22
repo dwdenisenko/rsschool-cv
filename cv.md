@@ -46,3 +46,11 @@ getAll(): Observable<LinkCategory[]> {
 
 ```
 
+## *Experience:*
+Little work experience
+
+## *Education:*
+Magistrate
+
+## *English language:*
+At the level of reading technical documentation
