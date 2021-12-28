@@ -72,6 +72,11 @@ footer img {
     align-items: center;
 }
 
+.links {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .code {
     background-color: #272727;
     color: #a4b1c0;
