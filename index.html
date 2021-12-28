@@ -2,10 +2,111 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="/style.css">
 	<title>Test</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<h1 class="roby">Test</h1>
+<header>
+	<div class="container">
+		<nav class="row">
+			<ul class="nav justify-content-end col-12">
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#about">About me</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#skills">Skills</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#code_example">Code example</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#experience">Experience</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#education">Education</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#language">Language</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<main>
+	<div class="container">
+		<div class="row">
+			<div class="col-3">
+				<div class="photo">
+					<img src="/assets/photo.jpg" alt="photo">
+				</div>
+				<h1>Denis Denisenko</h1>
+				<div class="contacts">
+					<div class="contact">
+						<div class="contact-name">Address:</div>
+						<div class="contact-info">Moscow</div>
+					</div>
+					<div class="contact">
+						<div class="contact-name">Phone:</div>
+						<div class="contact-info">+7(983)178-00-00</div>
+					</div>
+					<div class="contact">
+						<div class="contact-name">Email:</div>
+						<div class="contact-info">dwdenisenko@gmail.com</div>
+					</div>
+					<div class="contact">
+						<div class="contact-name">Telegram:</div>
+						<div class="contact-info">@hiddenis</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-9">
+				<div class="block">
+					<h2 id="about">About me</h2>
+					<p>I started to study web development in my first years of university, at the same time I was doing
+						a little freelancing. During his studies, he successfully completed an internship in web
+						application development, but continued his studies at the university. In the last courses of the
+						university, he decided to develop only on the web and moved to a company where there was only
+						web development.</p>
+				</div>
+				<div class="block">
+					<h2 id="skills">Skills</h2>
+					<p>TypeScript(Angular), PHP(Laravel)</p>
+				</div>
+				<div class="block">
+					<h2 id="code_example">Code example</h2>
+					<p>123</p>
+				</div>
+				<div class="block">
+					<h2 id="experience">Experience</h2>
+					<p>Little work experience</p>
+				</div>
+				<div class="block">
+					<h2 id="education">Education</h2>
+					<p>Magistrate</p>
+				</div>
+				<div class="block">
+					<h2 id="language">Language</h2>
+					<p>At the level of reading technical documentation</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="copyright col-10">
+				<span>© 2021 DENIS DENISENKO</span>
+			</div>
+			<a class="git-logo col" href="https://github.com/dwdenisenko"><img
+					src="https://www.pikpng.com/pngl/b/247-2473934_image-freeuse-download-png-icon-free-download-onlinewebfonts.png"
+					alt="Github logo"></a>
+			<a class="rs-logo col" href="https://rs.school/"><img src="https://rs.school/images/rs_school_js.svg"
+			                                                      alt="RS Logo"></a>
+		</div>
+	</div>
+</footer>
 </body>
 </html>
